@@ -1,0 +1,124 @@
+// color variables
+
+$dark_green: #1e3932;
+$green:#008248;
+$lime_green: #d4e9e2;
+$light_green: #f1f8f6;
+$light_yellow:#f3f1e7;
+$black:#000000;
+$light_black:rgba(0,0,0,.87);
+$backgroundColor:rgb(212, 233, 226);
+
+
+// flex display
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// containers width
+$large :90rem;
+
+
+.container{
+    max-width: $large;
+    margin: 0 auto ;
+}
+
+// media query
+$lg:117.5rem;
+$md:53.12rem;
+$sm:25.87rem;
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+
+body{
+
+height: 100%;
+line-height: 1.5;
+font-weight: 400;
+font-size: 1.4rem;
+font-family: sans-serif ;
+position: relative;
+overflow-x: hidden;
+}
+
+section{
+    margin-bottom: 8rem;
+}
+.btn{
+   
+    padding: 0.43rem 1rem;
+    color: $black;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid $black;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    transition: all .2s ease;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color:rgba(233,233,233,0.5);
+    }
+    
+
+}
+
+.btn-primary{
+    
+    padding: 0.43rem 1rem;
+    color: #fff;
+    background-color: $black;
+    border-radius:50px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: 1rem;
+    text-align: center;
+    transition: all .2s ease;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.8;
+    }
+    
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a{
+    list-style: none;
+    color: rgba(0,0,0,0.87);
+}
+
+.prl{
+    padding: 0 1.6rem;
+}
